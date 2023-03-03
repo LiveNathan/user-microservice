@@ -1,6 +1,6 @@
-package Repo;
+package cnLabs.usermicroservice.Repo;
 
-import Model.User;
+import cnLabs.usermicroservice.Model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {

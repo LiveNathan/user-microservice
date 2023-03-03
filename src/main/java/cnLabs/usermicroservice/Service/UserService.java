@@ -1,9 +1,10 @@
-package Service;
+package cnLabs.usermicroservice.Service;
 
-import Model.User;
-import Repo.UserRepository;
+import cnLabs.usermicroservice.Model.User;
+import cnLabs.usermicroservice.Repo.UserRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 

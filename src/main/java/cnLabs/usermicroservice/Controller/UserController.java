@@ -1,7 +1,7 @@
-package Controller;
+package cnLabs.usermicroservice.Controller;
 
-import Model.User;
-import Service.UserService;
+import cnLabs.usermicroservice.Model.User;
+import cnLabs.usermicroservice.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

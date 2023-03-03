@@ -1,4 +1,4 @@
-package Model;
+package cnLabs.usermicroservice.Model;
 
 import lombok.*;
 
