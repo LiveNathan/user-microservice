@@ -1,5 +1,6 @@
 package cnLabs.usermicroservice.Service;
 
+import cnLabs.usermicroservice.Clients.CartServiceClient;
 import cnLabs.usermicroservice.Model.User;
 import cnLabs.usermicroservice.Repo.UserRepository;
 import org.springframework.beans.BeanUtils;
@@ -13,6 +14,9 @@ public class UserService {
 
     @Autowired
     UserRepository userRepository;
+
+    @Autowired
+    CartServiceClient cartServiceClient;
 
     public User getUserById(Long id) {
         Optional<User> optional;
@@ -40,5 +44,6 @@ public class UserService {
 
     public void deleteUser(Long id) {
         userRepository.deleteById(id);
+        cartServiceClient.deleteUserCart(id);
     }
 }
