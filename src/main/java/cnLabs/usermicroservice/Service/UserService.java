@@ -23,7 +23,7 @@ public class UserService {
         if ((optional = userRepository.findById(id)).isEmpty()) {
             return null;
         } else {
-            return optional.get();
+            return optional.get(); // delete this note
         }
     }
 
